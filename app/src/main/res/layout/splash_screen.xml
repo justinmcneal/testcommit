@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash_screen">
+    tools:context=".splash_screen"
+    android:background="@drawable/gradient">
 
 
     <LinearLayout
+        android:id="@+id/LL1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/gradient"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,10 +21,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="75dp"
             android:layout_marginLeft="25dp"
-            android:text="Task Manager"
-            android:fontFamily="font"
-            android:textSize="40sp"/>
+            android:text="Welcome to"
+            android:fontFamily="@font/montagu_slab_light"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:text="Anak Ng PuTASK"
+            android:fontFamily="@font/montagu_slab_medium"
+            android:textSize="40sp" />
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="650dp"
+        android:src="@drawable/task_app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
